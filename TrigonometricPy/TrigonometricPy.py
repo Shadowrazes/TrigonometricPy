@@ -15,7 +15,7 @@ def A(data, k, n):
 
 def Y_x(data, T, x, n):
     sum = 0
-    for i in range(int(-n / 2), int(n / 2) + 1):
+    for i in range(int(-n / 2) + 1, int(n / 2) + 1):
         a = 2j * math.pi * i * (x - data[0].x) / T
         c = cmath.exp(a)
         sum += A(data, i, n) * c
